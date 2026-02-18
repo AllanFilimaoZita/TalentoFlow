@@ -6,11 +6,18 @@
 /* ==================== Fim da Definição da Font do Site ==================== */
 
 :root {
+    --body: #F9F8FD;
     --white: #FFFFFF;
     --roxo: #4642DD;
     --cean: #32A2FB;
     --dark: #23314B;
-    --text: #EEEEF3;
+    --action-blue: #0056D2;
+    --success-green: #00A86B;
+    --accent-yellow: #FFD700;
+    --deep-black: #1A1A1A;
+    --blue-gray: #64748B;
+    --light-border: #E2E8F0;
+    --off-white: #F8FAFC;
 }
 
 /* ==================== Reset da Estilização Padrão ==================== */
@@ -25,6 +32,15 @@
 /* ==================== Estilização Geral ==================== */
 body {
     padding: 1rem 4rem;
+    background-color: var(--body);
+}
+
+h1, h2 {
+    color: var(--deep-black);
+}
+
+p, a {
+    color: var(--blue-gray);
 }
 /* ==================== Fim da Estilização Geral ==================== */
 
@@ -55,6 +71,12 @@ header #navigation #navlist ul {
 header #navigation li, a {
     text-decoration: none;
     list-style: none;
+    transition: 0.4s ease-in-out;
+}
+
+header #navigation li a:hover {
+    color: var(--roxo);
+    font-size: 1.2rem;
 }
 
 header img {
@@ -81,14 +103,19 @@ header #button #btn1 {
 }
 
 header #button #btn1:hover {
-    color: var(--text);
+    color: var(--off-white);
     background-color: var(--roxo);
 }
 
 header #button #btn2 {
-    color: var(--white);
+    color: var(--off-white);
     font-weight: 600;
     transition: 0.3s ease-in-out;
     background-color: var(--roxo);
+}
+
+header #button #btn2:hover {
+    color: var(--roxo);
+    background-color: var(--off-white);
 }
 /* ==================== Fim da Estilização do Cabeçalho do Site ==================== */
