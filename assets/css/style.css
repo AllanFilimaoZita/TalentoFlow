@@ -31,7 +31,7 @@
 
 /* ==================== Estilização Geral ==================== */
 body {
-    padding: 1rem 4rem;
+    padding: 1rem 5rem;
     background-color: var(--body);
 }
 
@@ -69,6 +69,7 @@ header #navigation #navlist ul {
 }
 
 header #navigation li, a {
+    font-size: 0.8rem;
     text-decoration: none;
     list-style: none;
     transition: 0.4s ease-in-out;
@@ -80,8 +81,8 @@ header #navigation li a:hover {
 }
 
 header img {
-    width: 200px;
-    height: 100px;
+    width: 150px;
+    height: 70px;
 }
 
 header #button {
@@ -119,3 +120,111 @@ header #button #btn2:hover {
     background-color: var(--off-white);
 }
 /* ==================== Fim da Estilização do Cabeçalho do Site ==================== */
+
+/* ==================== Estilização da Hero Section ==================== */
+#hero-section {
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#conteudo {
+    width: 25rem;
+}
+
+#empty {
+    width: 25rem;
+}
+
+#conteudo h1 {
+    color: var(--dark);
+    font-size: 4rem;
+}
+
+#conteudo h2 {
+    font-size: 3rem;
+    color: var(--cean);
+}
+
+#Main {
+    margin-bottom: 2rem;
+}
+
+/* ==================== Fim da Estilização da Hero Section ==================== */
+
+/* ==================== Estilização da Search Section ==================== */
+#search {
+    padding: 1rem;
+    background-color: var(--white);
+}
+
+#search i {
+    font-size: 1.5rem;
+}
+
+#inputs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.provincia {
+    gap: 0.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.vagas {
+    display: flex;
+}
+
+.vagas .btn {
+    border: none;
+    padding: 0.5rem;
+    font-weight: 600;
+    border-radius: none;
+    color: var(--off-white);
+    transition: 0.3s ease-in-out;
+    background-color: var(--roxo);
+}
+
+.vagas select {
+    font-size: 0.7rem;
+    color: var(--blue-gray);
+}
+
+.cargo input {
+    color: var(--off-white);
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    width: 13rem;
+}
+
+.paragraph {
+    padding: 1rem 0;
+}
+
+.paragraph p {
+    font-size: 0.8rem;
+    color: var(--blue-gray);
+}
+/* ==================== Estilização da Search Section ==================== */
+#feature {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+#feature p {
+    font-size: 1rem;
+}
+
+#feature .little-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
