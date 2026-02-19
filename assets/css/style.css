@@ -228,3 +228,148 @@ header #button #btn2:hover {
     align-items: center;
     justify-content: space-between;
 }
+/* ==================== Últimas Vagas ==================== */
+
+.ultimas_vagas {
+    padding: 80px 0;
+    background-color: #f3f4f6;
+}
+
+.container_ultimas {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.topo_ultimas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.topo_ultimas h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #111827;
+}
+
+.topo_ultimas h2 span {
+    color: #3b82f6;
+}
+
+.ver_todas {
+    font-size: 14px;
+    color: #6b7280; 
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: 0.3s ease;
+}
+
+.ver_todas i {
+    transition: 0.3s ease;
+}
+
+/* Hover */
+.ver_todas:hover {
+    color: #3b82f6;
+}
+
+.ver_todas:hover i {
+    transform: translateX(4px);
+}
+
+
+.grade_ultimas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card_vaga {
+    background-color: #ffffff;
+    padding: 22px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.card_vaga:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+}
+
+.info_principal {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.logo_empresa {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.logo_empresa.verde { background: #10b981; }
+.logo_empresa.ciano { background: #06b6d4; }
+.logo_empresa.azul { background: #3b82f6; }
+.logo_empresa.azul2 { background: #2563eb; }
+.logo_empresa.turquesa { background: #14b8a6; }
+.logo_empresa.azul3 { background: #4f46e5; }
+
+.texto_vaga h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #111827;
+}
+
+.texto_vaga p {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.tags_vaga {
+    display: flex;
+    gap: 8px;
+}
+
+.tag {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.tag.full {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.tag.marketing {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.tag.design {
+    background-color: #e0e7ff;
+    color: #3730a3;
+}
+.tags_vaga {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap; /* permite quebrar tags se faltar espaço */
+}
+
+.tag {
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    white-space: nowrap; /* impede quebrar "Full Time" */
+}
+
