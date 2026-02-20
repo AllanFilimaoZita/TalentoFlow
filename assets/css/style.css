@@ -372,4 +372,15 @@ header #button #btn2:hover {
     border-radius: 20px;
     white-space: nowrap; /* impede quebrar "Full Time" */
 }
+.tag {
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
 
+.tag:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
