@@ -211,7 +211,7 @@ header #button #btn2:hover {
 }
 /* ==================== Estilização da Search Section ==================== */
 #feature {
-    padding: 5rem 0;
+    padding: 2.5rem 0;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -229,138 +229,170 @@ header #button #btn2:hover {
     justify-content: space-between;
 }
 /* ==================== Últimas Vagas ==================== */
-.container_ultimas {
-    width: 85%;
-    margin: 0 auto;
+
+/* ==================== Estilização da Category Section ==================== */
+.ultimas-vagas {
+    padding: 0 1rem;
 }
 
-.topo_ultimas {
+.ultimas-vagas .heading-vagas {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 40px;
-}
-.topo_ultimas h1 span {
-    color: #3b82f6;
 }
 
-.ver_todas {
-    font-size: 14px;
-    color: #6b7280; 
-    text-decoration: none;
+.ultimas-vagas .heading-vagas .link {
+    gap: 1rem;
     display: flex;
     align-items: center;
-    gap: 6px;
-    transition: 0.3s ease;
 }
 
-.ver_todas i {
-    transition: 0.3s ease;
+.ultimas-vagas a {
+    color: var(--roxo);
 }
 
-.ver_todas:hover {
-    color: #3b82f6;
+.ultimas-vagas a:hover {
+    color: var(--cean);
 }
 
-.ver_todas:hover i {
-    transform: translateX(4px);
+.ultimas-vagas .heading-vagas h2 {
+    font-size: 2rem;
+    color: var(--dark);
 }
 
-
-.grade_ultimas {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+.ultimas-vagas .heading-vagas span {
+    color: var(--cean);
 }
 
-.card_vaga {
-    background-color: #ffffff;
-    padding: 22px;
-    border-radius: 12px;
-    transition: 0.3s ease;
-}
-
-.card_vaga:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
-}
-
-.info_principal {
+#content-vagas {
+    padding: 4rem 0;
     display: flex;
-    gap: 15px;
-    margin-bottom: 15px;
+    flex-direction: column;
 }
 
-.logo_empresa {
-    width: 45px;
-    height: 45px;
-    border-radius: 10px;
+#first-row {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+
+#first-row .card {
+    gap: 2rem;
+    display: flex;
+    padding: 2rem;
+    background: var(--white);
+    flex-direction: column;
+}
+
+#first-row #card .card .roxo {
+    background: var(--roxo);
+}
+
+#first-row #roxo {
+    background: var(--roxo);
+}
+
+#first-row #roxo h4{
+    color: var(--white);
+}
+
+#first-row #roxo p {
+    color: var(--white);
+}
+
+#first-row #roxo i {
+    color: var(--white);
+}
+
+#first-row .card h4 {
+    width: 100px;
+    font-size: 1.2rem;
+    color: var(--dark);
+}
+
+#first-row .card i {
+    color: var(--roxo);
+    font-size: 2rem;
+}
+
+#first-row .card .links i {
+    font-size: 1rem;
+    color: var(--blue-gray);
+}
+
+#first-row .card .links {
+    gap: 0.5rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    color: #ffffff;
+    flex-direction: row;
 }
 
-
-.texto_vaga h3 {
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 4px;
-    color: #111827;
-}
-
-.texto_vaga p {
-    font-size: 13px;
-    color: #6b7280;
-}
-
-.tags_vaga {
-    display: flex;
-    gap: 8px;
-}
-
-.tag {
-    font-size: 12px;
-    padding: 4px 10px;
-    border-radius: 20px;
-}
-
-.tag.full {
-    background-color: #d1fae5;
-    color: #065f46;
-}
-
-.tag.marketing {
-    background-color: #fef3c7;
-    color: #92400e;
-}
-
-.tag.design {
-    background-color: #e0e7ff;
-    color: #3730a3;
-}
-.tags_vaga {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap; 
-}
-
-.tag {
-    font-size: 12px;
-    padding: 4px 12px;
-    border-radius: 20px;
-    white-space: nowrap; 
-}
-.tag {
-    font-size: 12px;
-    padding: 4px 12px;
-    border-radius: 20px;
-    transition: 0.3s ease;
+#first-row .card .links:hover {
     cursor: pointer;
+    color: var(--cean);
 }
 
-.tag:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+
+#second-row {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+
+#second-row .card {
+    gap: 2rem;
+    display: flex;
+    padding: 2rem;
+    background: var(--white);
+    flex-direction: column;
+}
+
+#second-row #card .card .roxo {
+    background: var(--roxo);
+}
+
+#second-row #roxo {
+    background: var(--roxo);
+}
+
+#second-row #roxo h4{
+    color: var(--white);
+}
+
+#second-row #roxo p {
+    color: var(--white);
+}
+
+#second-row #roxo i {
+    color: var(--white);
+}
+
+#second-row .card h4 {
+    width: 100px;
+    font-size: 1.2rem;
+    color: var(--dark);
+}
+
+#second-row .card i {
+    color: var(--roxo);
+    font-size: 2rem;
+}
+
+#second-row .card .links i {
+    font-size: 1rem;
+    color: var(--blue-gray);
+}
+
+#second-row .card .links {
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
