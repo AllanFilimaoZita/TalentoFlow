@@ -396,3 +396,45 @@ header #button #btn2:hover {
     align-items: center;
     flex-direction: row;
 }
+/* ==================== Fim da Estilização da Category Section ==================== */
+
+/* ==================== Estilização da Recrutment Category ==================== */
+
+#recrutamento {
+    display: flex;
+    padding: 1rem 2rem;
+    align-items: center;
+    background-color: var(--roxo);
+    justify-content: space-between;
+}
+
+#recrutamento .recrutamento-content {
+    gap: 1rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+}
+
+#recrutamento .recrutamento-content h2 {
+    font-size: 2.7rem;
+    color: var(--white);
+}
+
+#recrutamento .recrutamento-content p {
+    font-size: 0.7rem;
+    color: var(--white);
+}
+
+#recrutamento .recrutamento-content button {
+    width: 10rem;
+    border: none;
+    padding: 0.5rem;
+    font-weight: 700;
+    color: var(--action-blue);
+}
+
+#recrutamento .recrutamento-content button:hover {
+    cursor: pointer;
+}
+/* ==================== Fim da Estilização da Recrutment Category ==================== */
