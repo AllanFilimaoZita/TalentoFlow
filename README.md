@@ -1,6 +1,6 @@
 # TalentoFlow Website
 
-*(Substitua esta imagem pelo logo oficial da TalentoFlow quando tiverem um)*
+(assets/img/TalentoFlow Project.jpg)
 
 **Website institucional da TalentoFlow** – Projeto de Estudos em Desenvolvimento Web (Grupo de 3 elementos)
 
