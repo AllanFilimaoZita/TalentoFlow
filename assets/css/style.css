@@ -6,6 +6,14 @@
 /* ==================== Fim da Definição da Font do Site ==================== */
 
 :root {
+    --dark-red: #EE6050;
+    --light-red: #FDF0ED;
+    --dark-purple: #4741DA;
+    --light-purple: #EDECFA;
+    --dark-green: #5DCFAF;
+    --light-green: #EEFAF6;
+    --dark-orange: #F7B635;
+    --light-orange: #FCF2E9;
     --body: #F9F8FD;
     --white: #FFFFFF;
     --roxo: #4642DD;
@@ -256,12 +264,12 @@ header #button #btn2:hover {
     color: var(--cean);
 }
 
-.ultimas-vagas .heading-vagas h2 {
+h2 {
     font-size: 2rem;
     color: var(--dark);
 }
 
-.ultimas-vagas .heading-vagas span {
+.blue {
     color: var(--cean);
 }
 
@@ -402,6 +410,7 @@ header #button #btn2:hover {
 
 #recrutamento {
     display: flex;
+    margin: 0 1rem;
     padding: 1rem 2rem;
     align-items: center;
     background-color: var(--roxo);
@@ -438,3 +447,100 @@ header #button #btn2:hover {
     cursor: pointer;
 }
 /* ==================== Fim da Estilização da Recrutment Category ==================== */
+
+/* ==================== Estilização da Destaques Category ==================== */
+#destaques-vagas {
+    margin: 5rem 1rem;
+}
+
+#destaque-heading {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#content-destque {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#destaque {
+    gap: 1rem;
+    display: flex;
+    padding: 2rem 1rem;
+    flex-direction: column;
+}
+
+#destaque-cards {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+#destaque {
+    width: 300px;
+    background-color: var(--white);
+}
+
+#destaque-cards .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#destaque-cards .title button {
+    padding: 0.3rem;
+    font-size: 0.6rem;
+    color: var(--roxo);
+    border: 1px solid var(--roxo);
+    background-color: var(--white);
+}
+
+#destaque-cards .title i {
+    color: var(--action-blue);
+    font-size: 2rem;
+}
+
+#destaque-cards .content h5 {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--dark);
+}
+
+#destaque-cards p {
+    margin: 0.5rem 0 0 0;
+    font-weight: 300;
+}
+
+#destaque-cards .text p {
+    margin-bottom: 0.6rem;
+}
+
+#destaque-cards .btn button {
+    padding: 0.5rem;
+    font-weight: 700;
+    font-size: 0.8rem;
+    border-radius: 5rem;
+    border: 1px solid black;
+}
+
+.btn1 {
+    color: var(--dark-orange);
+    background-color: var(--light-orange);
+}
+
+.btn2 {
+    color: var(--dark-green);
+    background-color: var(--light-green);
+}
+
+.btn3 {
+    color: var(--dark-purple);
+    background-color: var(--light-purple);
+}
+/* ==================== Fim da Estilização da Destaques Category ==================== */
