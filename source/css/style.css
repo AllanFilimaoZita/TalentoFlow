@@ -494,8 +494,8 @@ h2 {
 }
 
 #destaque-cards .title button {
-    padding: 0.3rem;
-    font-size: 0.6rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
     color: var(--roxo);
     transition: 0.3s ease-in-out;
     border: 1px solid var(--roxo);
@@ -533,10 +533,11 @@ h2 {
     font-weight: 700;
     font-size: 0.8rem;
     border-radius: 5rem;
-    border: 1px solid black;
+
 }
 
 .btn1 {
+    border: none;
     color: var(--dark-orange);
     transition: all 0.3s ease-in-out;
     background-color: var(--light-orange);
@@ -548,6 +549,7 @@ h2 {
 }
 
 .btn2 {
+    border: none;
     color: var(--dark-green);
     transition: all 0.3s ease-in-out;
     background-color: var(--light-green);
@@ -559,6 +561,7 @@ h2 {
 }
 
 .btn3 {
+    border: none;
     color: var(--dark-purple);
     transition: all 0.3s ease-in-out;
     background-color: var(--light-purple);
@@ -568,4 +571,17 @@ h2 {
     color: var(--light-purple);
     background-color: var(--dark-purple);
 }
+
+.btn4 {
+    border: none;
+    color: var(--dark-red);
+    transition: all 0.3s ease-in-out;
+    background-color: var(--light-red);
+}
+
+.btn4:hover {
+    color: var(--light-red);
+    background-color: var(--dark-red);
+}
+
 /* ==================== Fim da Estilização da Destaques Category ==================== */
