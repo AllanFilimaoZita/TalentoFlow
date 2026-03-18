@@ -6,7 +6,7 @@
     <title>TalentoFlow - Modern Website</title>
 
     <!-- Link do CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="source/css/style.css">
 
     <!-- Favicon do Site -->
     <link rel="shortcut icon" href="assets/img/TalentoFlow Logo.png" type="image/x-icon">
@@ -38,319 +38,478 @@
     <!-- ==================== Fim do Cabeçalho do Site ==================== -->
 
     <!-- ==================== Hero Sectioin do Site ==================== -->
-    <section id="hero-section" class="hero-section">
-        <div id="Main" class="Main">
-            <div id="conteudo" class="conteudo">
-                <h1>Descubra mais de</h1>
-                <h2>5000+ Vagas</h2>
-                <img src="assets/img/Group.svg" alt="">
-                <p>
-                    A TalentoFlow é a ponte entre o seu talento e o mercado de trabalho moçambicano. Encontre oportunidades que impulsionam a sua carreira.
-                </p>
-            </div>
-            <div id="empty" class="empty">
-
-            </div>
-        </div>
-        <div id="search" class="search">
-            <div id="inputs" class="inputs">
-                <div id="cargo" class="cargo">
-                    <i class="ri-search-line"></i>
-                    <input type="search" name="search" id="search" placeholder="Cargo ou palavra-chave">
+    <main id="main" class="main">
+        <section id="hero-section" class="hero-section">
+            <div id="Main" class="Main">
+                <div id="conteudo" class="conteudo">
+                    <h1>Descubra mais de</h1>
+                    <h2>5000+ Vagas</h2>
+                    <img src="assets/img/Group.svg" alt="">
+                    <p>
+                        A TalentoFlow é a ponte entre o seu talento e o mercado de trabalho moçambicano. Encontre oportunidades que impulsionam a sua carreira.
+                    </p>
                 </div>
-                <div class="provincia">
-                    <label for="provincias"><i class="ri-map-pin-line"></i></label>
-                    <div id="vagas" class="vagas">
-                        <select id="provincias" name="provincias">
-                            <option value="Maputo">Selecionar Província (Maputo.)</option>
-                            <option value="Niassa">Niassa</option>
-                            <option value="Cabo Delgado">Cabo Delgado</option>
-                            <option value="Nampula">Nampula</option>
-                            <option value="Zambézia">Zambézia</option>
-                            <option value="Tete">Tete</option>
-                            <option value="Manica">Manica</option>
-                            <option value="Sofala">Sofala</option>
-                            <option value="Inhambane">Inhambane</option>
-                            <option value="Gaza">Gaza</option>
-                            <option value="Maputo">Maputo</option>
-                            <option value="Cidade de Maputo">Cidade de Maputo</option>
-                        </select>
-                        <button id="btn" class="btn">Pesquisar Vagas</button>
-                    </div>
+                <div id="empty" class="empty">
                 </div>
             </div>
-        </div>
-        <div id="paragraph" class="paragraph">
-            <p>Popular: UI Design, UX Researcher, Android, Admin</p>
-        </div>
-        <div id="feature" class="feature">
-            <div id="little-title" class="little-title">
-                <p>Empresas que ajudamos a crescer</p>
-            </div>
-            <div id="little-img" class="little-img">
-                <img src="assets/img/vodafone-logo.png" alt="vodafone-logo">
-                <img src="assets/img/intel-logo.png" alt="intel-logo">
-                <img src="assets/img/tesla-logo.png" alt="tesla-logo">
-                <img src="assets/img/amd-logo-1.png" alt="amd-logo-1">
-                <img src="assets/img/talkit-logo.png" alt="talkit-logo">
-            </div>
-        </div>
-    </section>
-    <!-- ==================== Fim do Cabeçalho do Site ==================== -->
-
-    <!-- ==================== Categoria de Vafas ==================== -->
-    <section id="ultimas-vagas" class="ultimas-vagas">
-        <div id="heading-vagas" class="heading-vagas">
-            <h2>Explore por <span class="blue">categorias</span></h2>
-            <a href="#">Show all jobs <i class="ri-arrow-right-line"></i></a>
-        </div>
-        <div id="content-vagas" class="content-vagas">
-            <div id="first-row" class="first-row">
-                <div id="card" class="card">
-                    <i class="ri-pencil-ruler-2-line"></i>
-                    <h4>Design</h4>
-                    <div id="links" class="links">
-                        <p>235 jobs available</p>
-                        <i class="ri-arrow-right-line"></i>
+            <div id="search" class="search">
+                <div id="inputs" class="inputs">
+                    <div id="cargo" class="cargo">
+                        <i class="ri-search-line"></i>
+                        <input type="search" name="search" id="search" placeholder="Cargo ou palavra-chave">
                     </div>
-                </div>
-                <div id="card" class="card">
-                    <i class="ri-line-chart-fill"></i>
-                    <h4>Sales</h4>
-                    <div id="links" class="links">
-                        <p>756 jobs available</p>
-                        <i class="ri-arrow-right-line"></i>
-                    </div>
-                </div>
-                <div id="roxo" class="card">
-                    <i class="ri-mic-fill"></i>
-                    <h4>Marketing</h4>
-                    <div id="links" class="links">
-                        <p>140 jobs available</p>
-                        <i class="ri-arrow-right-line"></i>
-                    </div>
-                </div>
-                <div id="card" class="card">
-                    <i class="ri-cash-line"></i>
-                    <h4>Vendas e Comercial</h4>
-                    <div id="links" class="links">
-                        <p>325 jobs available</p>
-                        <i class="ri-arrow-right-line"></i>
-                    </div>
-                </div>
-            </div>
-            <div id="second-row" class="second-row">
-                <div id="card" class="card">
-                    <i class="ri-mac-line"></i>
-                    <h4>Tecnologia e Informática</h4>
-                    <div id="links" class="links">
-                        <p>436 jobs available</p>
-                        <i class="ri-arrow-right-line"></i>
-                    </div>
-                </div>
-                <div id="card" class="card">
-                    <i class="ri-code-line"></i>
-                    <h4>Engenharia</h4>
-                    <div id="links" class="links">
-                        <p>542 jobs available</p>
-                        <i class="ri-arrow-right-line"></i>
-                    </div>
-                </div>
-                <div id="card" class="card">
-                    <i class="ri-briefcase-line"></i>
-                    <h4>Gestão de Negócios</h4>
-                    <div id="links" class="links">
-                        <p>211 jobs available</p>
-                        <i class="ri-arrow-right-line"></i>
-                    </div>
-                </div>
-                <div id="card" class="card">
-                    <i class="ri-group-3-line"></i>
-                    <h4>Recursos Humanos</h4>
-                    <div id="links" class="links">
-                        <p>346 jobs available</p>
-                        <i class="ri-arrow-right-line"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ==================== Fim Categoria de Vafas ==================== -->
-
-
-    <!-- ==================== Recrutamento ==================== -->
-    <section id="recrutamento" class="recrutamento">
-        <div id="recrutamento-content" class="recrutamento-content">
-            <h2>Comece a recrutar hoje mesmo</h2>
-            <p>Publicar Vaga agora por apenas 100MZN</p>
-            <button>Publicar Vaga agora</button>
-        </div>
-        <div id="recrutamento-img" class="recrutamento-img">
-            <img src="assets/img/Dashboard.png" alt="">
-        </div>
-    </section>
-    <!-- ==================== Fim Recrutamento ==================== -->
-
-
-    <section id="destaques-vagas" class="destaques-vagas">
-        <div id="destaque-heading" class="destaque-heading">
-            <h2>Vagas em <span class="blue">destaque</span></h2>
-            <a href="#">Show all jobs <i class="ri-arrow-right-line"></i></a>
-        </div>
-        <div id="content-destaque" class="content-destaque">
-            <div id="destaque-cards" class="destaque-cards">
-                <div id="destaque" class="destaque">
-                    <div id="title" class="title">
-                        <i class="ri-dropbox-fill"></i>
-                        <button>Full Time</button>
-                    </div>
-                    <div id="content" class="content">
-                        <h5>E-mail Marketing</h5>
-                        <p>Rovult . Madrid, Spain</p>
-                    </div>
-                    <div id="text" class="text">
-                        <p>
-                            Revult is looking for email marketing to help the team ma...
-                        </p>
-                        <div id="btn" class="btn">
-                            <button class="btn1">Marketing</button>
-                            <button class="btn2">Design</button>
-                        </div>
-                    </div>
-                </div>
-                <div id="destaque" class="destaque">
-                    <div id="title" class="title">
-                        <i class="ri-dropbox-fill"></i>
-                        <button>Full Time</button>
-                    </div>
-                    <div id="content" class="content">
-                        <h5>E-mail Marketing</h5>
-                        <p>Rovult . Madrid, Spain</p>
-                    </div>
-                    <div id="text" class="text">
-                        <p>
-                            Revult is looking for email marketing to help the team ma...
-                        </p>
-                        <div id="btn" class="btn">
-                            <button class="btn2">Design</button>
-                            <button class="btn3">Business</button>
-                        </div>
-                    </div>
-                </div>
-                <div id="destaque" class="destaque">
-                    <div id="title" class="title">
-                        <i class="ri-dropbox-fill"></i>
-                        <button>Full Time</button>
-                    </div>
-                    <div id="content" class="content">
-                        <h5>E-mail Marketing</h5>
-                        <p>Rovult . Madrid, Spain</p>
-                    </div>
-                    <div id="text" class="text">
-                        <p>
-                            Revult is looking for email marketing to help the team ma...
-                        </p>
-                        <div id="btn" class="btn">
-                            <button class="btn1">Marketing</button>
-                        </div>
-                    </div>
-                </div>
-                <div id="destaque" class="destaque">
-                    <div id="title" class="title">
-                        <i class="ri-dropbox-fill"></i>
-                        <button>Full Time</button>
-                    </div>
-                    <div id="content" class="content">
-                        <h5>E-mail Marketing</h5>
-                        <p>Rovult . Madrid, Spain</p>
-                    </div>
-                    <div id="text" class="text">
-                        <p>
-                            Revult is looking for email marketing to help the team ma...
-                        </p>
-                        <div id="btn" class="btn">
-                            <button class="btn2">Design</button>
+                    <div class="provincia">
+                        <label for="provincias"><i class="ri-map-pin-line"></i></label>
+                        <div id="vagas" class="vagas">
+                            <select id="provincias" name="provincias">
+                                <option value="Maputo">Selecionar Província (Maputo.)</option>
+                                <option value="Niassa">Niassa</option>
+                                <option value="Cabo Delgado">Cabo Delgado</option>
+                                <option value="Nampula">Nampula</option>
+                                <option value="Zambézia">Zambézia</option>
+                                <option value="Tete">Tete</option>
+                                <option value="Manica">Manica</option>
+                                <option value="Sofala">Sofala</option>
+                                <option value="Inhambane">Inhambane</option>
+                                <option value="Gaza">Gaza</option>
+                                <option value="Maputo">Maputo</option>
+                                <option value="Cidade de Maputo">Cidade de Maputo</option>
+                            </select>
+                            <button id="btn" class="btn">Pesquisar Vagas</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="destaque-cards" class="destaque-cards">
-                <div id="destaque" class="destaque">
-                    <div id="title" class="title">
-                        <i class="ri-dropbox-fill"></i>
-                        <button>Full Time</button>
+            <div id="paragraph" class="paragraph">
+                <p>Popular: UI Design, UX Researcher, Android, Admin</p>
+            </div>
+            <div id="feature" class="feature">
+                <div id="little-title" class="little-title">
+                    <p>Empresas que ajudamos a crescer</p>
+                </div>
+                <div id="little-img" class="little-img">
+                    <img src="assets/img/vodafone-logo.png" alt="vodafone-logo">
+                    <img src="assets/img/intel-logo.png" alt="intel-logo">
+                    <img src="assets/img/tesla-logo.png" alt="tesla-logo">
+                    <img src="assets/img/amd-logo-1.png" alt="amd-logo-1">
+                    <img src="assets/img/talkit-logo.png" alt="talkit-logo">
+                </div>
+            </div>
+        </section>
+        <!-- ==================== Fim do Cabeçalho do Site ==================== -->
+        <!-- ==================== Categoria de Vafas ==================== -->
+        <section id="ultimas-vagas" class="ultimas-vagas">
+            <div id="heading-vagas" class="heading-vagas">
+                <h2>Explore por <span class="blue">categorias</span></h2>
+                <a href="#">Show all jobs <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div id="content-vagas" class="content-vagas">
+                <div id="first-row" class="first-row">
+                    <div id="card" class="card">
+                        <i class="ri-pencil-ruler-2-line"></i>
+                        <h4>Design</h4>
+                        <div id="links" class="links">
+                            <p>235 jobs available</p>
+                            <i class="ri-arrow-right-line"></i>
+                        </div>
                     </div>
-                    <div id="content" class="content">
-                        <h5>E-mail Marketing</h5>
-                        <p>Rovult . Madrid, Spain</p>
+                    <div id="card" class="card">
+                        <i class="ri-line-chart-fill"></i>
+                        <h4>Sales</h4>
+                        <div id="links" class="links">
+                            <p>756 jobs available</p>
+                            <i class="ri-arrow-right-line"></i>
+                        </div>
                     </div>
-                    <div id="text" class="text">
-                        <p>
-                            Revult is looking for email marketing to help the team ma...
-                        </p>
-                        <div id="btn" class="btn">
-                            <button class="btn1">Marketing</button>
-                            <button class="btn2">Design</button>
+                    <div id="roxo" class="card">
+                        <i class="ri-mic-fill"></i>
+                        <h4>Marketing</h4>
+                        <div id="links" class="links">
+                            <p>140 jobs available</p>
+                            <i class="ri-arrow-right-line"></i>
+                        </div>
+                    </div>
+                    <div id="card" class="card">
+                        <i class="ri-cash-line"></i>
+                        <h4>Vendas e Comercial</h4>
+                        <div id="links" class="links">
+                            <p>325 jobs available</p>
+                            <i class="ri-arrow-right-line"></i>
                         </div>
                     </div>
                 </div>
-                <div id="destaque" class="destaque">
-                    <div id="title" class="title">
-                        <i class="ri-dropbox-fill"></i>
-                        <button>Full Time</button>
-                    </div>
-                    <div id="content" class="content">
-                        <h5>E-mail Marketing</h5>
-                        <p>Rovult . Madrid, Spain</p>
-                    </div>
-                    <div id="text" class="text">
-                        <p>
-                            Revult is looking for email marketing to help the team ma...
-                        </p>
-                        <div id="btn" class="btn">
-                            <button class="btn2">Design</button>
-                            <button class="btn3">Business</button>
+                <div id="second-row" class="second-row">
+                    <div id="card" class="card">
+                        <i class="ri-mac-line"></i>
+                        <h4>Tecnologia e Informática</h4>
+                        <div id="links" class="links">
+                            <p>436 jobs available</p>
+                            <i class="ri-arrow-right-line"></i>
                         </div>
                     </div>
-                </div>
-                <div id="destaque" class="destaque">
-                    <div id="title" class="title">
-                        <i class="ri-dropbox-fill"></i>
-                        <button>Full Time</button>
-                    </div>
-                    <div id="content" class="content">
-                        <h5>E-mail Marketing</h5>
-                        <p>Rovult . Madrid, Spain</p>
-                    </div>
-                    <div id="text" class="text">
-                        <p>
-                            Revult is looking for email marketing to help the team ma...
-                        </p>
-                        <div id="btn" class="btn">
-                            <button class="btn1">Marketing</button>
+                    <div id="card" class="card">
+                        <i class="ri-code-line"></i>
+                        <h4>Engenharia</h4>
+                        <div id="links" class="links">
+                            <p>542 jobs available</p>
+                            <i class="ri-arrow-right-line"></i>
                         </div>
                     </div>
-                </div>
-                <div id="destaque" class="destaque">
-                    <div id="title" class="title">
-                        <i class="ri-dropbox-fill"></i>
-                        <button>Full Time</button>
+                    <div id="card" class="card">
+                        <i class="ri-briefcase-line"></i>
+                        <h4>Gestão de Negócios</h4>
+                        <div id="links" class="links">
+                            <p>211 jobs available</p>
+                            <i class="ri-arrow-right-line"></i>
+                        </div>
                     </div>
-                    <div id="content" class="content">
-                        <h5>E-mail Marketing</h5>
-                        <p>Rovult . Madrid, Spain</p>
-                    </div>
-                    <div id="text" class="text">
-                        <p>
-                            Revult is looking for email marketing to help the team ma...
-                        </p>
-                        <div id="btn" class="btn">
-                            <button class="btn2">Design</button>
+                    <div id="card" class="card">
+                        <i class="ri-group-3-line"></i>
+                        <h4>Recursos Humanos</h4>
+                        <div id="links" class="links">
+                            <p>346 jobs available</p>
+                            <i class="ri-arrow-right-line"></i>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <!-- ==================== Fim Categoria de Vafas ==================== -->
+        <!-- ==================== Recrutamento ==================== -->
+        <section id="recrutamento" class="recrutamento">
+            <div id="recrutamento-content" class="recrutamento-content">
+                <h2>Comece a recrutar hoje mesmo</h2>
+                <p>Publicar Vaga agora por apenas 100MZN</p>
+                <button>Publicar Vaga agora</button>
+            </div>
+            <div id="recrutamento-img" class="recrutamento-img">
+                <img src="assets/img/Dashboard.png" alt="">
+            </div>
+        </section>
+        <!-- ==================== Fim Recrutamento ==================== -->
+        <section id="destaques-vagas" class="destaques-vagas">
+            <div id="destaque-heading" class="destaque-heading">
+                <h2>Vagas em <span class="blue">destaque</span></h2>
+                <a href="#">Show all jobs <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div id="content-destaque" class="content-destaque">
+                <div id="destaque-cards" class="destaque-cards">
+                    <div id="destaque" class="destaque">
+                        <div id="title" class="title">
+                            <i class="ri-dropbox-fill"></i>
+                            <button>Full Time</button>
+                        </div>
+                        <div id="content" class="content">
+                            <h5>E-mail Marketing</h5>
+                            <p>Rovult . Madrid, Spain</p>
+                        </div>
+                        <div id="text" class="text">
+                            <p>
+                                Revult is looking for email marketing to help the team ma...
+                            </p>
+                            <div id="btn" class="btn">
+                                <button class="btn1">Marketing</button>
+                                <button class="btn2">Design</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="destaque" class="destaque">
+                        <div id="title" class="title">
+                            <i class="ri-dropbox-fill"></i>
+                            <button>Full Time</button>
+                        </div>
+                        <div id="content" class="content">
+                            <h5>E-mail Marketing</h5>
+                            <p>Rovult . Madrid, Spain</p>
+                        </div>
+                        <div id="text" class="text">
+                            <p>
+                                Revult is looking for email marketing to help the team ma...
+                            </p>
+                            <div id="btn" class="btn">
+                                <button class="btn2">Design</button>
+                                <button class="btn3">Business</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="destaque" class="destaque">
+                        <div id="title" class="title">
+                            <i class="ri-dropbox-fill"></i>
+                            <button>Full Time</button>
+                        </div>
+                        <div id="content" class="content">
+                            <h5>E-mail Marketing</h5>
+                            <p>Rovult . Madrid, Spain</p>
+                        </div>
+                        <div id="text" class="text">
+                            <p>
+                                Revult is looking for email marketing to help the team ma...
+                            </p>
+                            <div id="btn" class="btn">
+                                <button class="btn1">Marketing</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="destaque" class="destaque">
+                        <div id="title" class="title">
+                            <i class="ri-dropbox-fill"></i>
+                            <button>Full Time</button>
+                        </div>
+                        <div id="content" class="content">
+                            <h5>E-mail Marketing</h5>
+                            <p>Rovult . Madrid, Spain</p>
+                        </div>
+                        <div id="text" class="text">
+                            <p>
+                                Revult is looking for email marketing to help the team ma...
+                            </p>
+                            <div id="btn" class="btn">
+                                <button class="btn2">Design</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="destaque-cards" class="destaque-cards">
+                    <div id="destaque" class="destaque">
+                        <div id="title" class="title">
+                            <i class="ri-dropbox-fill"></i>
+                            <button>Full Time</button>
+                        </div>
+                        <div id="content" class="content">
+                            <h5>E-mail Marketing</h5>
+                            <p>Rovult . Madrid, Spain</p>
+                        </div>
+                        <div id="text" class="text">
+                            <p>
+                                Revult is looking for email marketing to help the team ma...
+                            </p>
+                            <div id="btn" class="btn">
+                                <button class="btn1">Marketing</button>
+                                <button class="btn2">Design</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="destaque" class="destaque">
+                        <div id="title" class="title">
+                            <i class="ri-dropbox-fill"></i>
+                            <button>Full Time</button>
+                        </div>
+                        <div id="content" class="content">
+                            <h5>E-mail Marketing</h5>
+                            <p>Rovult . Madrid, Spain</p>
+                        </div>
+                        <div id="text" class="text">
+                            <p>
+                                Revult is looking for email marketing to help the team ma...
+                            </p>
+                            <div id="btn" class="btn">
+                                <button class="btn2">Design</button>
+                                <button class="btn3">Business</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="destaque" class="destaque">
+                        <div id="title" class="title">
+                            <i class="ri-dropbox-fill"></i>
+                            <button>Full Time</button>
+                        </div>
+                        <div id="content" class="content">
+                            <h5>E-mail Marketing</h5>
+                            <p>Rovult . Madrid, Spain</p>
+                        </div>
+                        <div id="text" class="text">
+                            <p>
+                                Revult is looking for email marketing to help the team ma...
+                            </p>
+                            <div id="btn" class="btn">
+                                <button class="btn1">Marketing</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="destaque" class="destaque">
+                        <div id="title" class="title">
+                            <i class="ri-dropbox-fill"></i>
+                            <button>Full Time</button>
+                        </div>
+                        <div id="content" class="content">
+                            <h5>E-mail Marketing</h5>
+                            <p>Rovult . Madrid, Spain</p>
+                        </div>
+                        <div id="text" class="text">
+                            <p>
+                                Revult is looking for email marketing to help the team ma...
+                            </p>
+                            <div id="btn" class="btn">
+                                <button class="btn2">Design</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==================== Fim Vagas em Destaques ==================== -->
+        
+            <section id="destaques-vagas" class="destaques-vagas">
+                <div id="destaque-heading" class="destaque-heading">
+                    <h2>Vagas em <span class="blue">destaque</span></h2>
+                    <a href="#">Show all jobs <i class="ri-arrow-right-line"></i></a>
+                </div>
+                <div id="content-destaque" class="content-destaque">
+                    <div id="destaque-cards" class="destaque-cards">
+                        <div id="destaque" class="destaque">
+                            <div id="title" class="title">
+                                <i class="ri-dropbox-fill"></i>
+                                <button>Full Time</button>
+                            </div>
+                            <div id="content" class="content">
+                                <h5>E-mail Marketing</h5>
+                                <p>Rovult . Madrid, Spain</p>
+                            </div>
+                            <div id="text" class="text">
+                                <p>
+                                    Revult is looking for email marketing to help the team ma...
+                                </p>
+                                <div id="btn" class="btn">
+                                    <button class="btn1">Marketing</button>
+                                    <button class="btn2">Design</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="destaque" class="destaque">
+                            <div id="title" class="title">
+                                <i class="ri-dropbox-fill"></i>
+                                <button>Full Time</button>
+                            </div>
+                            <div id="content" class="content">
+                                <h5>E-mail Marketing</h5>
+                                <p>Rovult . Madrid, Spain</p>
+                            </div>
+                            <div id="text" class="text">
+                                <p>
+                                    Revult is looking for email marketing to help the team ma...
+                                </p>
+                                <div id="btn" class="btn">
+                                    <button class="btn2">Design</button>
+                                    <button class="btn3">Business</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="destaque" class="destaque">
+                            <div id="title" class="title">
+                                <i class="ri-dropbox-fill"></i>
+                                <button>Full Time</button>
+                            </div>
+                            <div id="content" class="content">
+                                <h5>E-mail Marketing</h5>
+                                <p>Rovult . Madrid, Spain</p>
+                            </div>
+                            <div id="text" class="text">
+                                <p>
+                                    Revult is looking for email marketing to help the team ma...
+                                </p>
+                                <div id="btn" class="btn">
+                                    <button class="btn1">Marketing</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="destaque" class="destaque">
+                            <div id="title" class="title">
+                                <i class="ri-dropbox-fill"></i>
+                                <button>Full Time</button>
+                            </div>
+                            <div id="content" class="content">
+                                <h5>E-mail Marketing</h5>
+                                <p>Rovult . Madrid, Spain</p>
+                            </div>
+                            <div id="text" class="text">
+                                <p>
+                                    Revult is looking for email marketing to help the team ma...
+                                </p>
+                                <div id="btn" class="btn">
+                                    <button class="btn2">Design</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="destaque-cards" class="destaque-cards">
+                        <div id="destaque" class="destaque">
+                            <div id="title" class="title">
+                                <i class="ri-dropbox-fill"></i>
+                                <button>Full Time</button>
+                            </div>
+                            <div id="content" class="content">
+                                <h5>E-mail Marketing</h5>
+                                <p>Rovult . Madrid, Spain</p>
+                            </div>
+                            <div id="text" class="text">
+                                <p>
+                                    Revult is looking for email marketing to help the team ma...
+                                </p>
+                                <div id="btn" class="btn">
+                                    <button class="btn1">Marketing</button>
+                                    <button class="btn2">Design</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="destaque" class="destaque">
+                            <div id="title" class="title">
+                                <i class="ri-dropbox-fill"></i>
+                                <button>Full Time</button>
+                            </div>
+                            <div id="content" class="content">
+                                <h5>E-mail Marketing</h5>
+                                <p>Rovult . Madrid, Spain</p>
+                            </div>
+                            <div id="text" class="text">
+                                <p>
+                                    Revult is looking for email marketing to help the team ma...
+                                </p>
+                                <div id="btn" class="btn">
+                                    <button class="btn2">Design</button>
+                                    <button class="btn3">Business</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="destaque" class="destaque">
+                            <div id="title" class="title">
+                                <i class="ri-dropbox-fill"></i>
+                                <button>Full Time</button>
+                            </div>
+                            <div id="content" class="content">
+                                <h5>E-mail Marketing</h5>
+                                <p>Rovult . Madrid, Spain</p>
+                            </div>
+                            <div id="text" class="text">
+                                <p>
+                                    Revult is looking for email marketing to help the team ma...
+                                </p>
+                                <div id="btn" class="btn">
+                                    <button class="btn1">Marketing</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="destaque" class="destaque">
+                            <div id="title" class="title">
+                                <i class="ri-dropbox-fill"></i>
+                                <button>Full Time</button>
+                            </div>
+                            <div id="content" class="content">
+                                <h5>E-mail Marketing</h5>
+                                <p>Rovult . Madrid, Spain</p>
+                            </div>
+                            <div id="text" class="text">
+                                <p>
+                                    Revult is looking for email marketing to help the team ma...
+                                </p>
+                                <div id="btn" class="btn">
+                                    <button class="btn2">Design</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+         <!-- ==================== Fim Vagas em Destaques ==================== -->
+    </main>
 </body>
 </html>
