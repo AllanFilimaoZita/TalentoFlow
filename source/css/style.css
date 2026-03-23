@@ -585,3 +585,60 @@ h2 {
 }
 
 /* ==================== Fim da Estilização da Destaques Category ==================== */
+
+/* ==================== Estilização da Últimas Vagas Category ==================== */
+#content-ultimas {
+    gap: 1rem;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+#ultimas-vagas {
+    margin: 5rem 1rem;
+}
+
+#ultimas-cards {
+    gap: 2.5rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#ultimas {
+    width: 500px;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem 1.5rem;
+    background-color: var(--white);
+}
+
+#ultimas-content {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#ultimas-content h5 {
+    font-size: 0.9rem;
+    color: var(--dark);
+}
+
+#ultimas-content #btn {
+    display: flex;
+    gap: 1rem;
+}
+
+
+#ultimas-content #btn button {
+    padding: 0.5rem;
+    font-weight: 700;
+    font-size: 0.8rem;
+    border-radius: 5rem;
+}
+/* ==================== Fim da Estilização da Últimas Vagas Category ==================== */
+
+/* ==================== Estilização do Footer ==================== */
