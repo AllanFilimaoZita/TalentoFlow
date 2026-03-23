@@ -39,7 +39,6 @@
 
 /* ==================== Estilização Geral ==================== */
 body {
-    padding: 1rem 5rem;
     background-color: var(--body);
 }
 
@@ -54,6 +53,7 @@ p, a {
 
 /* ==================== Estilização do Cabeçalho do Site ==================== */
 header {
+    padding: 1rem 5rem;
     display: flex;
     font-size: 1rem;
     flex-direction: row;
@@ -131,7 +131,7 @@ header #button #btn2:hover {
 
 /* ==================== Estilização da Hero Section ==================== */
 #hero-section {
-    padding: 4rem 1rem;
+    padding: 4rem 5rem;
     display: flex;
     flex-direction: column;
 }
@@ -240,7 +240,7 @@ header #button #btn2:hover {
 
 /* ==================== Estilização da Category Section ==================== */
 .ultimas-vagas {
-    padding: 0 1rem;
+    padding: 1rem 5rem;
 }
 
 .ultimas-vagas .heading-vagas {
@@ -411,7 +411,7 @@ h2 {
 #recrutamento {
     display: flex;
     margin: 0 1rem;
-    padding: 1rem 2rem;
+    padding: 1rem 4rem;
     align-items: center;
     background-color: var(--roxo);
     justify-content: space-between;
@@ -450,7 +450,7 @@ h2 {
 
 /* ==================== Estilização da Destaques Category ==================== */
 #destaques-vagas {
-    margin: 5rem 1rem;
+    margin: 5rem 5rem;
 }
 
 #destaque-heading {
@@ -587,6 +587,9 @@ h2 {
 /* ==================== Fim da Estilização da Destaques Category ==================== */
 
 /* ==================== Estilização da Últimas Vagas Category ==================== */
+#ultimas-vagas {
+    padding: 1rem 4rem;
+}
 #content-ultimas {
     gap: 1rem;
     display: flex;
@@ -642,3 +645,150 @@ h2 {
 /* ==================== Fim da Estilização da Últimas Vagas Category ==================== */
 
 /* ==================== Estilização do Footer ==================== */
+#footer {
+    color: var(--off-white);
+    display: flex;
+    padding: 2rem 5rem;
+    flex-direction: column;
+    background-color: var(--deep-black);
+}
+
+#footer-content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 2.5rem;
+    justify-content: space-between;
+}
+
+#footer-logo img {
+    width: 150px;
+    height: 70px;
+}
+
+#footer-logo p {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+
+#footer-content {
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#footer-logo {
+    width: 27%;
+    margin-right: 5rem;
+}
+
+#footer-links {
+    width: 15%;
+}
+
+#footer-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+#footer ul li {
+    list-style: none;
+}
+
+#footer ul li a {
+    color: gray;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: 0.3s ease-in-out;
+}
+
+#footer-resources {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-resources ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+#footer-resources ul li {
+    list-style: none;
+}
+
+#footer-resources ul li a {
+    color: gray;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: 0.3s ease-in-out;
+}
+
+#find-footer {
+    width: 25%;
+}
+
+#find-footer {
+    width: 25%;
+}
+
+#find-footer h3 {
+    font-size: 1.2rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+#find-footer p {
+    font-size: 0.9rem;
+    color: gray;
+    margin-bottom: 1.5rem;
+}
+
+#find-footer input {
+    padding: 0.5rem;
+    width: 70%;
+    margin-bottom: 1rem;
+}
+
+#find-footer button {
+    padding: 0.6rem;
+    font-weight: 700;
+    font-size: 0.8rem;
+    border: none;
+    color: var(--white);
+    background-color: var(--roxo);
+}
+
+#last-footer {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+#footer-social {
+    display: flex;
+    gap: 2rem;
+}
+
+#footer-social i {
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--white);
+    font-size: 1.5rem;
+    transition: 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.318);
+}
+
+#footer-social i:hover {
+    cursor: pointer;
+    color: var(--roxo);
+    background-color: rgba(255, 255, 255, 0.8);
+}
