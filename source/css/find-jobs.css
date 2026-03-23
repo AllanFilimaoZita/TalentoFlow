@@ -4,6 +4,12 @@
          url('../fonts/Inter-Regular.woff') format('woff');
 }
 
+:root {
+    --deep-black: #1A1A1A;
+    --cean: #32A2FB;
+    --white: #D9D9D9;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,4 +20,47 @@
 body {
     background-color: var(--white);
     color: var(--black);
+}
+
+/* ==================== Main Heading ==================== */
+#main-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 5rem;
+}
+
+#first-content {
+    gap: 1rem;
+    display: flex;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    color: var(--deep-black);
+}
+
+#first-content h2 {
+    color: var(--cean);
+    font-size: 2.3rem;
+}
+
+#first-content img {
+    width: 180px;
+    display: flex;
+}
+
+#search-content {
+    width: 80%;
+    display: flex;
+    padding: 2rem 4rem;
+    margin: 2rem 0;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--white);
+}
+
+#input-group {
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
 }
