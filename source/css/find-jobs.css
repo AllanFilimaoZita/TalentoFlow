@@ -5,9 +5,26 @@
 }
 
 :root {
-    --deep-black: #1A1A1A;
+    --dark-red: #EE6050;
+    --light-red: #FDF0ED;
+    --dark-purple: #4741DA;
+    --light-purple: #EDECFA;
+    --dark-green: #5DCFAF;
+    --light-green: #EEFAF6;
+    --dark-orange: #F7B635;
+    --light-orange: #FCF2E9;
+    --body: #F9F8FD;
+    --white: #FFFFFF;
+    --roxo: #4642DD;
     --cean: #32A2FB;
-    --white: #D9D9D9;
+    --dark: #23314B;
+    --action-blue: #0056D2;
+    --success-green: #00A86B;
+    --accent-yellow: #FFD700;
+    --deep-black: #1A1A1A;
+    --blue-gray: #64748B;
+    --light-border: #E2E8F0;
+    --off-white: #F8FAFC;
 }
 
 * {
@@ -49,18 +66,88 @@ body {
     display: flex;
 }
 
+
+
 #search-content {
+    gap: 1rem;
     width: 80%;
     display: flex;
-    padding: 2rem 4rem;
     margin: 2rem 0;
+    padding: 2rem 4rem;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--white);
+}
+
+#search-content p {
+    font-size: 0.8rem;
+    color: var(--blue-gray);
 }
 
 #input-group {
+    width: 100%;
     gap: 2rem;
     display: flex;
+    padding: 2rem 4rem;
     flex-direction: row;
+    background-color: var(--white);
+}
+
+#input-div {
+    width: 50%;
+    display: flex;
+}
+
+#input-div input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid rgb(158, 158, 158);
+    font-size: 1rem;
+}
+
+#input-div select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid rgb(158, 158, 158);
+    font-size: 1rem;
+}
+
+#input-div button {
+    padding: 0.6rem 1rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+    color: var(--white);
+    background-color: var(--roxo);
+}
+
+#input-div button:hover {
+    padding: 0.8rem 1.2rem;
+    background-color: var(--action-blue);
+}
+
+#input-div label {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--blue-gray);
+}
+
+#input-div input::placeholder {
+    color: var(--blue-gray);
+}
+
+#input-div select {
+    color: var(--blue-gray);
+}
+
+#input-div select option {
+    color: var(--deep-black);
+}
+
+#input-div {
+    gap: 1.5rem;
+    display: flex;
+    align-items: center;
 }
