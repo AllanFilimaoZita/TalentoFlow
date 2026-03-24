@@ -1,10 +1,10 @@
-/* ==================== Definição da Font ==================== */
+/* ==================== Definição da Font do Site ==================== */
 @font-face {
     font-family: 'Inter';
-    src: url('../fonts/Inter-Regular.ttf') format('truetype');
+    src: url('../fonts/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
 }
+/* ==================== Fim da Definição da Font do Site ==================== */
 
-/* ==================== Variáveis ==================== */
 :root {
     --dark-red: #EE6050;
     --light-red: #FDF0ED;
@@ -28,87 +28,767 @@
     --off-white: #F8FAFC;
 }
 
-/* ==================== Reset ==================== */
+/* ==================== Reset da Estilização Padrão ==================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
+/* ==================== Fim do Reset da Estilização Padrão ==================== */
 
+/* ==================== Estilização Geral ==================== */
 body {
     background-color: var(--body);
-    line-height: 1.6;
 }
 
-/* ==================== Cabeçalho ==================== */
+h1, h2 {
+    color: var(--deep-black);
+}
+
+p, a {
+    color: var(--blue-gray);
+}
+/* ==================== Fim da Estilização Geral ==================== */
+
+/* ==================== Estilização do Cabeçalho do Site ==================== */
 header {
-    padding: 1rem 5%;
+    padding: 1rem 5rem;
+    display: flex;
+    font-size: 1rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header #navigation {
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header #navigation #navlist ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+header #navigation li, a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.4s ease-in-out;
+}
+
+header #navigation li a:hover {
+    color: var(--roxo);
+    font-size: 1.2rem;
+}
+
+header img {
+    width: 150px;
+    height: 70px;
+}
+
+header #button {
+    display: flex;
+    gap: 1rem;
+}
+
+header #button button {
+    border: none;
+    padding: 0.6rem;
+    font-size: 1rem;
+}
+
+header #button #btn1 {
+    color: var(--roxo);
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    background-color: var(--white);
+}
+
+header #button #btn1:hover {
+    color: var(--off-white);
+    background-color: var(--roxo);
+}
+
+header #button #btn2 {
+    color: var(--off-white);
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    background-color: var(--roxo);
+}
+
+header #button #btn2:hover {
+    color: var(--roxo);
+    background-color: var(--off-white);
+}
+/* ==================== Fim da Estilização do Cabeçalho do Site ==================== */
+
+/* ==================== Estilização da Hero Section ==================== */
+#hero-section {
+    padding: 4rem 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#conteudo {
+    width: 25rem;
+}
+
+#empty {
+    width: 25rem;
+}
+
+#conteudo h1 {
+    color: var(--dark);
+    font-size: 4rem;
+}
+
+#conteudo h2 {
+    font-size: 3rem;
+    color: var(--cean);
+}
+
+#Main {
+    margin-bottom: 2rem;
+}
+
+/* ==================== Fim da Estilização da Hero Section ==================== */
+
+/* ==================== Estilização da Search Section ==================== */
+#search {
+    padding: 1rem;
+    background-color: var(--white);
+}
+
+#search i {
+    font-size: 1.5rem;
+}
+
+#inputs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.provincia {
+    gap: 0.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.vagas {
+    display: flex;
+}
+
+.vagas .btn {
+    border: none;
+    padding: 0.5rem;
+    font-weight: 600;
+    border-radius: none;
+    color: var(--off-white);
+    transition: 0.3s ease-in-out;
+    background-color: var(--roxo);
+}
+
+.vagas select {
+    font-size: 0.7rem;
+    color: var(--blue-gray);
+}
+
+.cargo input {
+    color: var(--off-white);
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    width: 13rem;
+}
+
+.paragraph {
+    padding: 1rem 0;
+}
+
+.paragraph p {
+    font-size: 0.8rem;
+    color: var(--blue-gray);
+}
+/* ==================== Estilização da Search Section ==================== */
+#feature {
+    padding: 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+#feature p {
+    font-size: 1rem;
+}
+
+#feature .little-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+/* ==================== Últimas Vagas ==================== */
+
+/* ==================== Estilização da Category Section ==================== */
+.ultimas-vagas {
+    padding: 1rem 5rem;
+}
+
+.ultimas-vagas .heading-vagas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ultimas-vagas .heading-vagas .link {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.ultimas-vagas a {
+    color: var(--roxo);
+}
+
+.ultimas-vagas a:hover {
+    color: var(--cean);
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--dark);
+}
+
+.blue {
+    color: var(--cean);
+}
+
+#content-vagas {
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#first-row {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+
+#first-row .card {
+    gap: 2rem;
+    display: flex;
+    padding: 2rem;
+    background: var(--white);
+    flex-direction: column;
+}
+
+#first-row #card .card .roxo {
+    background: var(--roxo);
+}
+
+#first-row #roxo {
+    background: var(--roxo);
+}
+
+#first-row #roxo h4{
+    color: var(--white);
+}
+
+#first-row #roxo p {
+    color: var(--white);
+}
+
+#first-row #roxo i {
+    color: var(--white);
+}
+
+#first-row .card h4 {
+    width: 100px;
+    font-size: 1.2rem;
+    color: var(--dark);
+}
+
+#first-row .card i {
+    color: var(--roxo);
+    font-size: 2rem;
+}
+
+#first-row .card .links i {
+    font-size: 1rem;
+    color: var(--blue-gray);
+}
+
+#first-row .card .links {
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#first-row .card .links:hover {
+    cursor: pointer;
+    color: var(--cean);
+}
+
+
+#second-row {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+
+#second-row .card {
+    gap: 2rem;
+    display: flex;
+    padding: 2rem;
+    background: var(--white);
+    flex-direction: column;
+}
+
+#second-row #card .card .roxo {
+    background: var(--roxo);
+}
+
+#second-row #roxo {
+    background: var(--roxo);
+}
+
+#second-row #roxo h4{
+    color: var(--white);
+}
+
+#second-row #roxo p {
+    color: var(--white);
+}
+
+#second-row #roxo i {
+    color: var(--white);
+}
+
+#second-row .card h4 {
+    width: 100px;
+    font-size: 1.2rem;
+    color: var(--dark);
+}
+
+#second-row .card i {
+    color: var(--roxo);
+    font-size: 2rem;
+}
+
+#second-row .card .links i {
+    font-size: 1rem;
+    color: var(--blue-gray);
+}
+
+#second-row .card .links {
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+/* ==================== Fim da Estilização da Category Section ==================== */
+
+/* ==================== Estilização da Recrutment Category ==================== */
+
+#recrutamento {
+    display: flex;
+    margin: 0 1rem;
+    padding: 1rem 4rem;
+    align-items: center;
+    background-color: var(--roxo);
+    justify-content: space-between;
+}
+
+#recrutamento .recrutamento-content {
+    gap: 1rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+}
+
+#recrutamento .recrutamento-content h2 {
+    font-size: 2.7rem;
+    color: var(--white);
+}
+
+#recrutamento .recrutamento-content p {
+    font-size: 0.7rem;
+    color: var(--white);
+}
+
+#recrutamento .recrutamento-content button {
+    width: 10rem;
+    border: none;
+    padding: 0.5rem;
+    font-weight: 700;
+    color: var(--action-blue);
+}
+
+#recrutamento .recrutamento-content button:hover {
+    cursor: pointer;
+}
+/* ==================== Fim da Estilização da Recrutment Category ==================== */
+
+/* ==================== Estilização da Destaques Category ==================== */
+#destaques-vagas {
+    margin: 5rem 5rem;
+}
+
+#destaque-heading {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#content-destque {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#destaque {
+    gap: 1rem;
+    display: flex;
+    padding: 2rem 1rem;
+    flex-direction: column;
+}
+
+#destaque-cards {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+#destaque {
+    width: 300px;
+    background-color: var(--white);
+}
+
+#destaque-cards .title {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--white);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
-#navigation {
+#destaque-cards .title button {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--roxo);
+    transition: 0.3s ease-in-out;
+    border: 1px solid var(--roxo);
+    background-color: var(--white);
+}
+
+#destaque-cards .title button:hover {
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--roxo);
+}
+
+#destaque-cards .title i {
+    color: var(--action-blue);
+    font-size: 2rem;
+}
+
+#destaque-cards .content h5 {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--dark);
+}
+
+#destaque-cards p {
+    margin: 0.5rem 0 0 0;
+    font-weight: 300;
+}
+
+#destaque-cards .text p {
+    margin-bottom: 0.6rem;
+}
+
+#destaque-cards .btn button {
+    padding: 0.5rem;
+    font-weight: 700;
+    font-size: 0.8rem;
+    border-radius: 5rem;
+
+}
+
+.btn1 {
+    border: none;
+    color: var(--dark-orange);
+    transition: all 0.3s ease-in-out;
+    background-color: var(--light-orange);
+}
+
+.btn1:hover {
+    color: var(--light-orange);
+    background-color: var(--dark-orange);
+}
+
+.btn2 {
+    border: none;
+    color: var(--dark-green);
+    transition: all 0.3s ease-in-out;
+    background-color: var(--light-green);
+}
+
+.btn2:hover {
+    color: var(--light-green);
+    background-color: var(--dark-green);
+}
+
+.btn3 {
+    border: none;
+    color: var(--dark-purple);
+    transition: all 0.3s ease-in-out;
+    background-color: var(--light-purple);
+}
+
+.btn3:hover {
+    color: var(--light-purple);
+    background-color: var(--dark-purple);
+}
+
+.btn4 {
+    border: none;
+    color: var(--dark-red);
+    transition: all 0.3s ease-in-out;
+    background-color: var(--light-red);
+}
+
+.btn4:hover {
+    color: var(--light-red);
+    background-color: var(--dark-red);
+}
+
+/* ==================== Fim da Estilização da Destaques Category ==================== */
+
+/* ==================== Estilização da Últimas Vagas Category ==================== */
+#ultimas-vagas {
+    padding: 1rem 4rem;
+}
+#content-ultimas {
+    gap: 1rem;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+#ultimas-vagas {
+    margin: 5rem 1rem;
+}
+
+#ultimas-cards {
+    gap: 2.5rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#ultimas {
+    width: 500px;
+    gap: 2rem;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    flex-direction: row;
+    padding: 2rem 1.5rem;
+    background-color: var(--white);
 }
 
-.logo img {
-    width: 140px;
-    height: auto;
-}
-
-.navlist ul {
+#ultimas-content {
     display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#ultimas-content h5 {
+    font-size: 0.9rem;
+    color: var(--dark);
+}
+
+#ultimas-content #btn {
+    display: flex;
+    gap: 1rem;
+}
+
+
+#ultimas-content #btn button {
+    padding: 0.5rem;
+    font-weight: 700;
+    font-size: 0.8rem;
+    border-radius: 5rem;
+}
+/* ==================== Fim da Estilização da Últimas Vagas Category ==================== */
+
+/* ==================== Estilização do Footer ==================== */
+#footer {
+    color: var(--off-white);
+    display: flex;
+    padding: 2rem 5rem;
+    flex-direction: column;
+    background-color: var(--deep-black);
+}
+
+#footer-content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 2.5rem;
+    justify-content: space-between;
+}
+
+#footer-logo img {
+    width: 150px;
+    height: 70px;
+}
+
+#footer-logo p {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+
+#footer-content {
     gap: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#footer-logo {
+    width: 27%;
+    margin-right: 5rem;
+}
+
+#footer-links {
+    width: 15%;
+}
+
+#footer-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+#footer ul li {
     list-style: none;
 }
 
-.navlist a {
+#footer ul li a {
+    color: gray;
     text-decoration: none;
-    color: var(--dark);
-    font-weight: 500;
-    transition: color 0.3s ease;
+    font-size: 0.8rem;
+    transition: 0.3s ease-in-out;
 }
 
-.navlist a:hover {
-    color: var(--roxo);
+#footer-resources {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
 }
 
-#button button {
-    padding: 0.65rem 1.4rem;
+#footer-resources ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+#footer-resources ul li {
+    list-style: none;
+}
+
+#footer-resources ul li a {
+    color: gray;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: 0.3s ease-in-out;
+}
+
+#find-footer {
+    width: 25%;
+}
+
+#find-footer {
+    width: 25%;
+}
+
+#find-footer h3 {
+    font-size: 1.2rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+#find-footer p {
+    font-size: 0.9rem;
+    color: gray;
+    margin-bottom: 1.5rem;
+}
+
+#find-footer input {
+    padding: 0.5rem;
+    width: 70%;
+    margin-bottom: 1rem;
+}
+
+#find-footer button {
+    padding: 0.6rem;
+    font-weight: 700;
+    font-size: 0.8rem;
     border: none;
-    font-weight: 600;
+    color: var(--white);
+    background-color: var(--roxo);
+}
+
+#last-footer {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+#footer-social {
+    display: flex;
+    gap: 2rem;
+}
+
+#footer-social i {
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--white);
+    font-size: 1.5rem;
+    transition: 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.318);
+}
+
+#footer-social i:hover {
     cursor: pointer;
-    transition: all 0.3s;
-}
-
-#btn1 {
-    background-color: var(--white);
     color: var(--roxo);
-    border: 2px solid var(--roxo);
+    background-color: rgba(255, 255, 255, 0.8);
 }
-
-#btn1:hover {
-    background-color: var(--roxo);
-    color: var(--white);
-}
-
-#btn2 {
-    background-color: var(--roxo);
-    color: var(--white);
-    border: 2px solid var(--roxo);
-}
-
-#btn2:hover {
-    background-color: var(--white);
-    color: var(--roxo);
-}
-
