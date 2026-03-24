@@ -42,6 +42,7 @@
     <!-- ==================== Fim do Cabeçalho do Site ==================== -->
 
     <main id="main" class="main">
+        <!-- ==================== Main Heading ==================== -->
         <section id="main-heading" class="main-heading">
             <div id="first-content" class="first-content">
                 <h1>Find your</h1>
@@ -73,6 +74,244 @@
                 </div>
                 <p>Popular: UI Designer, UX Researcher, Android, Admin</p>
             </div>
+        </section>
+        <!-- ==================== Fim do Main Heading ==================== -->
+
+        <!-- ==================== Jobs Container ==================== -->
+        <section id="jobs-container" class="jobs-container">
+            <div id="sidebar" class="sidebar">
+                <h3>Type of Employment</h3>
+                <div id="filter-group" class="filter-group">
+                    <label><input type="checkbox" name="employment" value="full-time"> Full Time (3)</label>
+                    <label><input type="checkbox" name="employment" value="part-time"> Part Time (5)</label>
+                    <label><input type="checkbox" name="employment" value="remote"> Remote (2)</label>
+                    <label><input type="checkbox" name="employment" value="internship"> Internship (24)</label>
+                    <label><input type="checkbox" name="employment" value="contact"> Contact (3)</label>
+                </div>
+
+                <h3>Categories</h3>
+                <div id="filter-group" class="filter-group">
+                    <label><input type="checkbox" name="categories" value="design"> Design (24)</label>
+                    <label><input type="checkbox" name="categories" value="sales"> Sales (3)</label>
+                    <label><input type="checkbox" name="categories" value="marketing"> Marketing (3)</label>
+                    <label><input type="checkbox" name="categories" value="human-resource"> Human Resource (5)</label>
+                    <label><input type="checkbox" name="categories" value="finance"> Finance (4)</label>
+                    <label><input type="checkbox" name="categories" value="engineering"> Engineering (4)</label>
+                    <label><input type="checkbox" name="categories" value="technology"> Technology (5)</label>
+                </div>
+
+                <h3>Job Level</h3>
+                <div id="filter-group" class="filter-group">
+                    <label><input type="checkbox" name="level" value="entry"> Entry Level (57)</label>
+                    <label><input type="checkbox" name="level" value="mid"> Mid Level (3)</label>
+                    <label><input type="checkbox" name="level" value="senior"> Senior Level (5)</label>
+                    <label><input type="checkbox" name="level" value="director"> Director (12)</label>
+                    <label><input type="checkbox" name="level" value="VP-Above"> VP or Above (8)</label>
+                </div>
+
+                <h3>Salary Range</h3>
+                <div id="filter-group" class="filter-group">
+                    <label><input type="checkbox" name="salary" value="0-5000"> $700 - $1000 (4)</label>
+                    <label><input type="checkbox" name="salary" value="5000-10000"> $100 - $1500 (6)</label>
+                    <label><input type="checkbox" name="salary" value="10000-20000"> $1500 - $2000 (10)</label>
+                    <label><input type="checkbox" name="salary" value="20000-50000"> $3000 - $above (4)</label>
+                </div>
+            </div>
+
+            <div id="job-list" class="job-list">
+                <div id="job-heading" class="job-heading">
+                    <div id="head-title" class="head-title">
+                        <h4>All Jobs</h4>
+                        <p>Showing 73 results</p>
+                    </div>
+
+                    <div id="sort-group" class="sort-group">
+                        <select name="sort" id="sort">
+                            <option value="newest">Most Relevant</option>
+                            <option value="newest">Newest</option>
+                            <option value="oldest">Oldest</option>
+                        </select>
+
+                        <div id="view-group" class="view-group">
+                            <i class='bx bx-grid-alt'></i>
+                            <i class='bx bx-list-ul'></i>
+                        </div>
+                    </div>
+
+                    <div id="jobs-group" class="jobs-group">
+                        <div id=job-card class=job-card>
+                            <div id="job-info">
+                                <div id="img" class="img">
+                                    <img src="../../assets/svg/5.svg" alt="" width="90px" height="90px">
+                                </div>
+                                <div id="job-content" class="job-content">
+                                    <h5>Social Media Assistant</h5>
+                                    <p>Noma • Paris, France</p>
+                                    <div id="btn" class="btn">
+                                        <button class="btn1">Full-Time</button>
+                                        <button class="btn2">Marketing</button>
+                                        <button class="btn3">Design</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="text-align:right;">
+                                <button class="apply-btn">Apply</button>
+                                <div class="capacity">5 applied of 10 capacity</div>
+                                <div class="capacity-bar">
+                                    <div class="capacity-fill" style="width:50%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id=job-card class=job-card>
+                            <div id="job-info">
+                                <div id="img" class="img">
+                                    <img src="../../assets/svg/13.svg" alt="" width="90px" height="90px">
+                                </div>
+                                <div id="job-content" class="job-content">
+                                    <h5>Branding Designer</h5>
+                                    <p>Dropbox • San Francisco, USA</p>
+                                    <div id="btn" class="btn">
+                                        <button class="btn1">Full-Time</button>
+                                        <button class="btn2">Marketing</button>
+                                        <button class="btn3">Design</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="text-align:right;">
+                                <button class="apply-btn">Apply</button>
+                                <div class="capacity">2 applied of 10 capacity</div>
+                                <div class="capacity-bar">
+                                    <div class="capacity-fill" style="width:20%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id=job-card class=job-card>
+                            <div id="job-info">
+                                <div id="img" class="img">
+                                    <img src="../../assets/svg/4.svg" alt="" width="90px" height="90px">
+                                </div>
+                                <div id="job-content" class="job-content">
+                                    <h5>Interactive Developer</h5>
+                                    <p>Terraform • Hamburg, Germany</p>
+                                    <div id="btn" class="btn">
+                                        <button class="btn1">Full-Time</button>
+                                        <button class="btn2">Marketing</button>
+                                        <button class="btn3">Design</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="text-align:right;">
+                                <button class="apply-btn">Apply</button>
+                                <div class="capacity">8 applied of 12 capacity</div>
+                                <div class="capacity-bar">
+                                    <div class="capacity-fill" style="width:80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id=job-card class=job-card>
+                            <div id="job-info">
+                                <div id="img" class="img">
+                                    <img src="../../assets/svg/16.svg" alt="" width="90px" height="90px">
+                                </div>
+                                <div id="job-content" class="job-content">
+                                    <h5>Email Marketing</h5>
+                                    <p>Revolut • Madrid, Spain</p>
+                                    <div id="btn" class="btn">
+                                        <button class="btn1">Full-Time</button>
+                                        <button class="btn2">Marketing</button>
+                                        <button class="btn3">Design</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="text-align:right;">
+                                <button class="apply-btn">Apply</button>
+                                <div class="capacity">0 applied of 10 capacity</div>
+                                <div class="capacity-bar">
+                                    <div class="capacity-fill""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id=job-card class=job-card>
+                            <div id="job-info">
+                                <div id="img" class="img">
+                                    <img src="../../assets/svg/14.svg" alt="" width="90px" height="90px">
+                                </div>
+                                <div id="job-content" class="job-content">
+                                    <h5>Lead Engineer</h5>
+                                    <p>Canva • Ankara, Turkey</p>
+                                    <div id="btn" class="btn">
+                                        <button class="btn1">Full-Time</button>
+                                        <button class="btn2">Marketing</button>
+                                        <button class="btn3">Design</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="text-align:right;">
+                                <button class="apply-btn">Apply</button>
+                                <div class="capacity">5 applied of 10 capacity</div>
+                                <div class="capacity-bar">
+                                    <div class="capacity-fill" style="width:50%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id=job-card class=job-card>
+                            <div id="job-info">
+                                <div id="img" class="img">
+                                    <img src="../../assets/svg/12.svg" alt="" width="90px" height="90px">
+                                </div>
+                                <div id="job-content" class="job-content">
+                                    <h5>Product Designer</h5>
+                                    <p>ClassPass • Berlim, Germany</p>
+                                    <div id="btn" class="btn">
+                                        <button class="btn1">Full-Time</button>
+                                        <button class="btn2">Marketing</button>
+                                        <button class="btn3">Design</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="text-align:right;">
+                                <button class="apply-btn">Apply</button>
+                                <div class="capacity">5 applied of 10 capacity</div>
+                                <div class="capacity-bar">
+                                    <div class="capacity-fill" style="width:50%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id=job-card class=job-card>
+                            <div id="job-info">
+                                <div id="img" class="img">
+                                    <img src="../../assets/svg/17.svg" alt="" width="90px" height="90px">
+                                </div>
+                                <div id="job-content" class="job-content">
+                                    <h5>Customer Manager</h5>
+                                    <p>Pitch • Berlim, Germany</p>
+                                    <div id="btn" class="btn">
+                                        <button class="btn1">Full-Time</button>
+                                        <button class="btn2">Marketing</button>
+                                        <button class="btn3">Design</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div style="text-align:right;">
+                                <button class="apply-btn">Apply</button>
+                                <div class="capacity">5 applied of 10 capacity</div>
+                                <div class="capacity-bar">
+                                    <div class="capacity-fill" style="width:50%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </section>
     </main>
 
