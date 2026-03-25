@@ -3,6 +3,7 @@
     font-family: 'Inter';
     src: url('../fonts/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
 }
+
 /* ==================== Fim da Definição da Font do Site ==================== */
 
 :root {
@@ -35,6 +36,7 @@
     box-sizing: border-box;
     font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
+
 /* ==================== Fim do Reset da Estilização Padrão ==================== */
 
 /* ==================== Estilização Geral ==================== */
@@ -42,17 +44,20 @@ body {
     background-color: var(--body);
 }
 
-h1, h2 {
+h1,
+h2 {
     color: var(--deep-black);
 }
 
-p, a {
+p,
+a {
     color: var(--blue-gray);
 }
+
 /* ==================== Fim da Estilização Geral ==================== */
 
 /* ==================== Estilização do Cabeçalho do Site ==================== */
-header {
+#header-desktop {
     padding: 1rem 5rem;
     display: flex;
     font-size: 1rem;
@@ -61,7 +66,7 @@ header {
     justify-content: space-between;
 }
 
-header #navigation {
+#header-desktop #navigation {
     gap: 2rem;
     display: flex;
     flex-direction: row;
@@ -69,64 +74,66 @@ header #navigation {
     justify-content: space-between;
 }
 
-header #navigation #navlist ul {
+#header-desktop #navigation #navlist ul {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
 }
 
-header #navigation li, a {
+#header-desktop #navigation li,
+a {
     font-size: 0.8rem;
     text-decoration: none;
     list-style: none;
     transition: 0.4s ease-in-out;
 }
 
-header #navigation li a:hover {
+#header-desktop #navigation li a:hover {
     color: var(--roxo);
     font-size: 1.2rem;
 }
 
-header img {
+#header-desktop img {
     width: 150px;
     height: 70px;
 }
 
-header #button {
+#header-desktop #button {
     display: flex;
     gap: 1rem;
 }
 
-header #button button {
+#header-desktop #button button {
     border: none;
     padding: 0.6rem;
     font-size: 1rem;
 }
 
-header #button #btn1 {
+#header-desktop #button #btn1 {
     color: var(--roxo);
     font-weight: 600;
     transition: 0.3s ease-in-out;
     background-color: var(--white);
 }
 
-header #button #btn1:hover {
+#header-desktop #button #btn1:hover {
     color: var(--off-white);
     background-color: var(--roxo);
 }
 
-header #button #btn2 {
+#header-desktop #button #btn2 {
     color: var(--off-white);
     font-weight: 600;
     transition: 0.3s ease-in-out;
     background-color: var(--roxo);
 }
 
-header #button #btn2:hover {
+#header-desktop #button #btn2:hover {
     color: var(--roxo);
     background-color: var(--off-white);
 }
+
 /* ==================== Fim da Estilização do Cabeçalho do Site ==================== */
 
 /* ==================== Estilização da Hero Section ==================== */
@@ -217,6 +224,7 @@ header #button #btn2:hover {
     font-size: 0.8rem;
     color: var(--blue-gray);
 }
+
 /* ==================== Estilização da Search Section ==================== */
 #feature {
     padding: 2.5rem 0;
@@ -236,6 +244,7 @@ header #button #btn2:hover {
     align-items: center;
     justify-content: space-between;
 }
+
 /* ==================== Últimas Vagas ==================== */
 
 /* ==================== Estilização da Category Section ==================== */
@@ -304,7 +313,7 @@ h2 {
     background: var(--roxo);
 }
 
-#first-row #roxo h4{
+#first-row #roxo h4 {
     color: var(--white);
 }
 
@@ -370,7 +379,7 @@ h2 {
     background: var(--roxo);
 }
 
-#second-row #roxo h4{
+#second-row #roxo h4 {
     color: var(--white);
 }
 
@@ -404,6 +413,7 @@ h2 {
     align-items: center;
     flex-direction: row;
 }
+
 /* ==================== Fim da Estilização da Category Section ==================== */
 
 /* ==================== Estilização da Recrutment Category ==================== */
@@ -446,6 +456,7 @@ h2 {
 #recrutamento .recrutamento-content button:hover {
     cursor: pointer;
 }
+
 /* ==================== Fim da Estilização da Recrutment Category ==================== */
 
 /* ==================== Estilização da Destaques Category ==================== */
@@ -590,12 +601,14 @@ h2 {
 #ultimas-vagas {
     padding: 1rem 4rem;
 }
+
 #content-ultimas {
     gap: 1rem;
     display: flex;
     align-self: center;
     justify-content: space-between;
 }
+
 #ultimas-vagas {
     margin: 5rem 1rem;
 }
@@ -642,6 +655,7 @@ h2 {
     font-size: 0.8rem;
     border-radius: 5rem;
 }
+
 /* ==================== Fim da Estilização da Últimas Vagas Category ==================== */
 
 /* ==================== Estilização do Footer ==================== */
@@ -797,7 +811,7 @@ h2 {
 
 /* ---- Tablet grande / Desktop pequeno (max-width: 1024px) ---- */
 @media (max-width: 1024px) {
-    header {
+    #header-desktop {
         padding: 1rem 2rem;
     }
 
@@ -894,27 +908,28 @@ h2 {
 
 /* ---- Tablet (max-width: 768px) ---- */
 @media (max-width: 768px) {
-    /* Header */
-    header {
+
+    /*-desktop Header */
+    #header-desktop {
         padding: 1rem 1.5rem;
         flex-wrap: wrap;
         gap: 1rem;
     }
 
-    header #navigation {
+    #header-desktop #navigation {
         flex: 1;
         gap: 1rem;
     }
 
-    header #navigation #navlist ul {
+    #header-desktop #navigation #navlist ul {
         gap: 0.6rem;
     }
 
-    header #button {
+    #header-desktop #button {
         gap: 0.5rem;
     }
 
-    header #button button {
+    #header-desktop #button button {
         padding: 0.5rem 0.8rem;
         font-size: 0.85rem;
     }
@@ -1114,32 +1129,10 @@ h2 {
 
 /* ---- Mobile (max-width: 480px) ---- */
 @media (max-width: 480px) {
-    /* Header */
-    header {
-        padding: 0.8rem 1rem;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.8rem;
-    }
 
-    header #navigation {
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    header img {
-        width: 110px;
-        height: 50px;
-    }
-
-    header #button {
-        width: 100%;
-        justify-content: flex-end;
-    }
-
-    header #button button {
-        padding: 0.4rem 0.7rem;
-        font-size: 0.8rem;
+    /* #header-desktop Header */
+    header#header-desktop {
+        display: none;
     }
 
     /* Hero */
