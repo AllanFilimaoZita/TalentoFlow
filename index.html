@@ -39,9 +39,12 @@
     </header>
     
     <header id="header-mobile" class="header-mobile">
+        <div class="logo">
+            <a href="index.html"><img src="assets/svg/TalentoFlow Logo 1.svg" alt="TalentoFlow Logo"></a>
+        </div>
         <div id="navigation" class="navigation">
-            <div class="logo">
-                <a href="index.html"><img src="assets/svg/TalentoFlow Logo 1.svg" alt="TalentoFlow Logo"></a>
+            <div id="menu-close" class="menu-close">
+                <i id="close-icon" class="ri-close-line"></i>
             </div>
             <nav id="navlist" class="navlist">
                 <ul>
@@ -49,10 +52,13 @@
                     <li><a href="source/pages/browse-companies.html">Browse Companies</a></li>
                 </ul>
             </nav>
+            <div id="button" class="button">
+                <a href="source/pages/sign-in.html"><button id="btn1" class="btn1">Sing In</button></a>
+                <a href="source/pages/sign-up.html"><button id="btn2" class="btn2">Sign Up</button></a>
+            </div>
         </div>
-        <div id="button" class="button">
-            <a href="source/pages/sign-in.html"><button id="btn1" class="btn1">Sing In</button></a>
-            <a href="source/pages/sign-up.html"><button id="btn2" class="btn2">Sign Up</button></a>
+        <div id="menu-open" class="menu-open">
+            <i id="open-icon" class="ri-menu-line"></i>
         </div>
     </header>
     <!-- ==================== Fim do Cabeçalho do Site ==================== -->
@@ -562,6 +568,8 @@
         </div>
 
     </footer>
+
+    <script src="source/js/script.js"></script>
 </body>
 
 </html>

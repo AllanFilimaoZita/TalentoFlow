@@ -40,6 +40,10 @@ body {
 }
 
 /* ==================== Main Heading ==================== */
+#main {
+    padding-top: 5rem;
+}
+
 #main-heading {
     display: flex;
     flex-direction: column;

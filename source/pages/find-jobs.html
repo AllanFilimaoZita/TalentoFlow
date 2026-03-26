@@ -22,10 +22,10 @@
 <body>
 
     <!-- ==================== Cabeçalho do Site ==================== -->
-    <header id="header" class="header">
+    <header id="header-desktop" class="header-desktop">
         <div id="navigation" class="navigation">
             <div class="logo">
-                <a href="../../index.html"><img src="../../assets/svg/TalentoFlow Logo 1.svg" alt="TalentoFlow Logo"></a>
+                <a href="index.html"><img src="../../assets/svg/TalentoFlow Logo 1.svg" alt="TalentoFlow Logo"></a>
             </div>
             <nav id="navlist" class="navlist">
                 <ul>
@@ -35,8 +35,32 @@
             </nav>
         </div>
         <div id="button" class="button">
-            <a href="../pages/sign-in.html"><button id="btn1" class="btn1">Entrar</button></a>
-            <a href="../pages/sign-up.html"><button id="btn2" class="btn2">Criar Conta</button></a>
+            <a href="source/pages/sign-in.html"><button id="btn1" class="btn1">Sing In</button></a>
+            <a href="source/pages/sign-up.html"><button id="btn2" class="btn2">Sign Up</button></a>
+        </div>
+    </header>
+    
+    <header id="header-mobile" class="header-mobile">
+        <div class="logo">
+            <a href="index.html"><img src="../../assets/svg/TalentoFlow Logo 1.svg" alt="TalentoFlow Logo"></a>
+        </div>
+        <div id="navigation" class="navigation">
+            <div id="menu-close" class="menu-close">
+                <i id="close-icon" class="ri-close-line"></i>
+            </div>
+            <nav id="navlist" class="navlist">
+                <ul>
+                    <li><a href="source/pages/find-jobs.html">Find Jobs</a></li>
+                    <li><a href="source/pages/browse-companies.html">Browse Companies</a></li>
+                </ul>
+            </nav>
+            <div id="button" class="button">
+                <a href="source/pages/sign-in.html"><button id="btn1" class="btn1">Sing In</button></a>
+                <a href="source/pages/sign-up.html"><button id="btn2" class="btn2">Sign Up</button></a>
+            </div>
+        </div>
+        <div id="menu-open" class="menu-open">
+            <i id="open-icon" class="ri-menu-line"></i>
         </div>
     </header>
     <!-- ==================== Fim do Cabeçalho do Site ==================== -->
@@ -370,6 +394,7 @@
     </footer>
     <!-- ==================== Cabeçalho do Site ==================== -->
 
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
